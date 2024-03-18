@@ -36,6 +36,7 @@ body {
 .copy-btn.active {
 	@apply border-[#DAF8E6] bg-green-light text-green;
 	border: #DAF8E6 !important;
+	color: #22AD5C !important;
 }
 
 .download-btn:focus {
