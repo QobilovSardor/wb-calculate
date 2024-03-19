@@ -7,7 +7,7 @@ html {
 }
 
 body {
-	@apply font-Inter font-normal text-base leading-6 text-dark-2;
+	@apply font-Inter font-normal text-base leading-6 text-dark-2 duration-150;
 }
 
 input[type=number]::-webkit-inner-spin-button,
@@ -211,8 +211,17 @@ input[type=number]::-webkit-outer-spin-button {
 	@apply stroke-red;
 }
 
+header .nav-item,
 header .nav {
 	transition: left ease 0.8s;
+}
+
+header .nav {
+	visibility: hidden;
+}
+
+header .nav.active {
+	visibility: visible;
 }
 
 .menu-btn,
@@ -252,7 +261,7 @@ header .nav {
 	transition: top ease .3s, transform ease .3s .3s;
 }
 
-header .nav.active {
+header .nav-item.active {
 	@apply left-0;
 }
 
@@ -384,6 +393,10 @@ header .nav.active {
 @media screen and (max-width: 640px) {
 	.form-info {
 		@apply text-xs leading-[20px];
+	}
+
+	.no-transition {
+		@apply duration-0;
 	}
 
 	.media-btn {

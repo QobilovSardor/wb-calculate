@@ -1,16 +1,19 @@
 document.addEventListener('DOMContentLoaded', () => {
 	// responsive menu
 	const menuBtn = document.querySelector('.menu-btn');
+	const navItem = document.querySelector("header .nav-item");
 	const nav = document.querySelector("header .nav");
 	menuBtn.addEventListener('click', () => {
-		nav.classList.toggle('active');
+		navItem.classList.toggle('active');
 		menuBtn.classList.toggle('active');
+		nav.classList.toggle('active');
 	})
 
 	nav.addEventListener('click', (e) => {
 		if (e.target && e.target.classList.contains('nav')) {
-			nav.classList.remove('active');
+			navItem.classList.remove('active');
 			menuBtn.classList.remove('active');
+			nav.classList.remove('active');
 		}
 	})
 
@@ -72,7 +75,6 @@ document.addEventListener('DOMContentLoaded', () => {
 		inputElement.classList.remove('warning');
 	}
 
-	// Validate Inputni boshqarishni boshlang
 	initializeInputValidation();
 
 
@@ -262,7 +264,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
 	try {
-		// counter
 		const counters = document.querySelectorAll('.counter');
 
 		if (counters) {
@@ -273,40 +274,128 @@ document.addEventListener('DOMContentLoaded', () => {
 				const countPrice = counter.querySelector('.count-price');
 
 				let countNumber = 1;
-				let currentCountPrice = 3500;
 
 				const updateCounter = () => {
-					count.forEach(item => {
-						if (countNumber <= 10) {
+					if (countPrice) {
+						count.forEach(item => {
 							item.textContent = `${countNumber} карточка`;
-							countPrice.textContent = `${currentCountPrice}₽`;
+						})
+						switch (countNumber) {
+							case 1:
+								countPrice.textContent = '3500₽';
+								break;
+							case 2:
+								countPrice.textContent = '7000₽';
+								break;
+							case 3:
+								countPrice.textContent = '9975₽';
+								break;
+							case 4:
+								countPrice.textContent = '13300₽';
+								break;
+							case 5:
+								countPrice.textContent = '16625₽';
+								break;
+							case 6:
+								countPrice.textContent = '19950₽';
+								break;
+							case 7:
+								countPrice.textContent = '23275₽';
+								break;
+							case 8:
+								countPrice.textContent = '26600₽';
+								break;
+							case 9:
+								countPrice.textContent = '29925₽';
+								break;
+							case 10:
+								countPrice.textContent = '33250₽';
+								break;
+							default:
+								break;
 						}
-					});
-				};
+					};
+				}
 
 				if (plusCount) {
 					plusCount.addEventListener('click', () => {
-						if (currentCountPrice < 8000) {
+						if (countNumber < 10) {
 							countNumber++;
-							currentCountPrice += 500
-						};
-						updateCounter();
+							updateCounter();
+						}
 					});
 				}
 
 				if (minusCount) {
 					minusCount.addEventListener('click', () => {
 						if (countNumber > 1) {
-							if (currentCountPrice >= 3500) {
-								countNumber--;
-								currentCountPrice -= 500
-							};
+							countNumber--;
 							updateCounter();
 						}
 					});
 				}
+
+				updateCounter();
 			});
 		}
+
+		// counter
+		// const counters = document.querySelectorAll('.counter');
+
+		// if (counters) {
+		// 	counters.forEach(counter => {
+		// 		const plusCount = counter.querySelector('.plus-count');
+		// 		const minusCount = counter.querySelector('.minus-count');
+		// 		const count = counter.querySelectorAll('.count');
+		// 		const countPrice = counter.querySelector('.count-price');
+
+		// 		let countNumber = 1;
+		// 		let currentCountPrice = 3500;
+		// 		/* 
+		// 						Как считаем:
+		// 		1 = (1х3500) = 3500
+		// 		2 = (2х3500) = 7000
+		// 		3 = (3х3325) = 9975
+		// 		4 = (4х3325) = 13300
+		// 		5 = (5х3325) = 16625
+		// 		6 = (6х3325) = 19950
+		// 		7 = (7х3325) = 23275
+		// 		8 = (8х3325) = 26600
+		// 		9 = (9х3325) = 29925
+		// 		10 = (10х3325) = 33250
+		// 		*/
+		// 		const updateCounter = () => {
+		// 			count.forEach(item => {
+		// 				if (countNumber <= 10) {
+		// 					item.textContent = `${countNumber} карточка`;
+		// 					countPrice.textContent = `${currentCountPrice}₽`;
+		// 				}
+		// 			});
+		// 		};
+
+		// 		if (plusCount) {
+		// 			plusCount.addEventListener('click', () => {
+		// 				if (currentCountPrice < 8000) {
+		// 					countNumber++;
+		// 					currentCountPrice += 500
+		// 				};
+		// 				updateCounter();
+		// 			});
+		// 		}
+
+		// 		if (minusCount) {
+		// 			minusCount.addEventListener('click', () => {
+		// 				if (countNumber > 1) {
+		// 					if (currentCountPrice >= 3500) {
+		// 						countNumber--;
+		// 						currentCountPrice -= 500
+		// 					};
+		// 					updateCounter();
+		// 				}
+		// 			});
+		// 		}
+		// 	});
+		// }
 	} catch (error) {
 		throw error
 	}
