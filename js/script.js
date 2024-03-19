@@ -146,7 +146,6 @@ document.addEventListener('DOMContentLoaded', () => {
 		});
 	}
 
-	// Har bir dropdownni boshlang'ichlashtirish
 	const dropdowns = document.querySelectorAll('.sellect-dropdown');
 	dropdowns.forEach(initializeDropdown);
 
