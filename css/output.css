@@ -848,6 +848,10 @@ video {
   height: 100%;
 }
 
+.h-\[20px\] {
+  height: 20px;
+}
+
 .max-h-\[328px\] {
   max-height: 328px;
 }
@@ -905,6 +909,10 @@ video {
   width: 100%;
 }
 
+.w-\[27px\] {
+  width: 27px;
+}
+
 .min-w-8 {
   min-width: 2rem;
 }
@@ -941,8 +949,8 @@ video {
   max-width: 102px;
 }
 
-.max-w-\[148px\] {
-  max-width: 148px;
+.max-w-\[155px\] {
+  max-width: 155px;
 }
 
 .max-w-\[191px\] {
@@ -953,16 +961,16 @@ video {
   max-width: 192px;
 }
 
-.max-w-\[195px\] {
-  max-width: 195px;
+.max-w-\[208px\] {
+  max-width: 208px;
 }
 
 .max-w-\[260px\] {
   max-width: 260px;
 }
 
-.max-w-\[453px\] {
-  max-width: 453px;
+.max-w-\[455px\] {
+  max-width: 455px;
 }
 
 .max-w-\[576px\] {
@@ -989,6 +997,14 @@ video {
   flex: 1 1 0%;
 }
 
+.flex-shrink {
+  flex-shrink: 1;
+}
+
+.flex-shrink-0 {
+  flex-shrink: 0;
+}
+
 .shrink-0 {
   flex-shrink: 0;
 }
@@ -1006,8 +1022,8 @@ video {
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
-.rotate-180 {
-  --tw-rotate: 180deg;
+.rotate-0 {
+  --tw-rotate: 0deg;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
@@ -1254,6 +1270,11 @@ video {
 .border-stroke {
   --tw-border-opacity: 1;
   border-color: rgb(223 228 234 / var(--tw-border-opacity));
+}
+
+.border-white {
+  --tw-border-opacity: 1;
+  border-color: rgb(255 255 255 / var(--tw-border-opacity));
 }
 
 .border-r-\[\#DDD6FE\] {
@@ -2117,7 +2138,7 @@ input[type=number]::-webkit-outer-spin-button {
 }
 
 .open-box.active svg {
-  --tw-rotate: 0deg;
+  --tw-rotate: 180deg;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
@@ -2148,6 +2169,62 @@ input[type=number]::-webkit-outer-spin-button {
 
 .close-btn:hover svg path {
   stroke: #F56060;
+}
+
+header .nav {
+  transition: left ease 0.8s;
+}
+
+.menu-btn,
+.menu-btn::before,
+.menu-btn::after {
+  position: absolute;
+  display: block;
+  height: 2px;
+  width: 18px;
+  border-radius: 9999px;
+  --tw-bg-opacity: 1;
+  background-color: rgb(31 42 55 / var(--tw-bg-opacity));
+  --tw-content: '';
+  content: var(--tw-content);
+  transition: background ease .3s, top ease .3s .3s, transform ease .3s;
+}
+
+.menu-btn::after {
+  width: 9px;
+  --tw-bg-opacity: 1;
+  background-color: rgb(107 114 128 / var(--tw-bg-opacity));
+}
+
+.menu-btn::before {
+  top: -5px;
+}
+
+.menu-btn::after {
+  top: 5px;
+}
+
+.menu-btn.active {
+  background-color: transparent;
+}
+
+.menu-btn.active::before {
+  --tw-rotate: 45deg;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.menu-btn.active::after {
+  width: 18px;
+  --tw-rotate: -45deg;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+  --tw-bg-opacity: 1;
+  background-color: rgb(31 42 55 / var(--tw-bg-opacity));
+}
+
+.menu-btn.active::before,
+.menu-btn.active::after {
+  top: 0;
+  transition: top ease .3s, transform ease .3s .3s;
 }
 
 header .nav.active {
@@ -2434,9 +2511,8 @@ header .nav.active {
     min-width: 115px;
   }
 
-  .\34 80\:max-w-fit {
-    max-width: -moz-fit-content;
-    max-width: fit-content;
+  .\34 80\:max-w-full {
+    max-width: 100%;
   }
 
   .\34 80\:text-base {
@@ -2499,6 +2575,10 @@ header .nav.active {
     display: inline-block;
   }
 
+  .sm\:h-\[20px\] {
+    height: 20px;
+  }
+
   .sm\:w-auto {
     width: auto;
   }
@@ -2506,6 +2586,10 @@ header .nav.active {
   .sm\:w-fit {
     width: -moz-fit-content;
     width: fit-content;
+  }
+
+  .sm\:w-\[20px\] {
+    width: 20px;
   }
 
   .sm\:min-w-\[102px\] {
@@ -2740,8 +2824,8 @@ header .nav.active {
     width: fit-content;
   }
 
-  .md\:max-w-\[328px\] {
-    max-width: 328px;
+  .md\:max-w-\[290px\] {
+    max-width: 290px;
   }
 
   .md\:max-w-\[358px\] {
@@ -2750,6 +2834,15 @@ header .nav.active {
 
   .md\:max-w-\[50\%\] {
     max-width: 50%;
+  }
+
+  .md\:max-w-fit {
+    max-width: -moz-fit-content;
+    max-width: fit-content;
+  }
+
+  .md\:flex-\[auto\] {
+    flex: auto;
   }
 
   .md\:flex-row {

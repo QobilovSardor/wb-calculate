@@ -184,7 +184,7 @@ input[type=number]::-webkit-outer-spin-button {
 }
 
 .open-box.active svg {
-	@apply rotate-0
+	@apply rotate-180;
 }
 
 .soccial-media:hover {
@@ -211,8 +211,49 @@ input[type=number]::-webkit-outer-spin-button {
 	@apply stroke-red;
 }
 
+header .nav {
+	transition: left ease 0.8s;
+}
+
+.menu-btn,
+.menu-btn::before,
+.menu-btn::after {
+	@apply content-[''] bg-dark-2 block h-[2px] absolute w-[18px] rounded-full;
+	transition: background ease .3s, top ease .3s .3s, transform ease .3s;
+}
+
+.menu-btn::after {
+	@apply bg-dark-5 w-[9px]
+}
+
+.menu-btn::before {
+	@apply top-[-5px];
+}
+
+.menu-btn::after {
+	@apply top-[5px];
+}
+
+.menu-btn.active {
+	@apply bg-transparent
+}
+
+.menu-btn.active::before {
+	@apply rotate-45;
+}
+
+.menu-btn.active::after {
+	@apply w-[18px] bg-dark-2 -rotate-45
+}
+
+.menu-btn.active::before,
+.menu-btn.active::after {
+	top: 0;
+	transition: top ease .3s, transform ease .3s .3s;
+}
+
 header .nav.active {
-	@apply left-0
+	@apply left-0;
 }
 
 .kurs-boxes {

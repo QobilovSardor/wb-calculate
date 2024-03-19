@@ -23,10 +23,11 @@
 				<header class="md:pt-8 992:px-8 md:pb-[22px] py-[14px]">
 					<div class="container flex items-center md:justify-normal justify-between">
 						<div class="flex items-center gap-4 md:justify-normal justify-between md:w-fit w-full">
-							<button class="z-[100] md:hidden menu-btn space-y-1">
+							<button class="z-[100] md:hidden menu-btn relative space-y-1">
+								<!-- <span class="w-[18px] duration-200 transition-all h-[1.5px] bg-dark-2 rounded-full block"></span>
 								<span class="w-[18px] duration-200 transition-all h-[1.5px] bg-dark-2 rounded-full block"></span>
-								<span class="w-[18px] duration-200 transition-all h-[1.5px] bg-dark-2 rounded-full block"></span>
-								<span class="w-[9px] h-[1.5px] bg-dark-5 rounded-full block"></span>
+								<span class="w-[9px] h-[1.5px] bg-dark-5 rounded-full block"></span> -->
+
 							</button>
 							<a class="md:mx-0 mx-auto" href="#!">
 								<img class="md:w-[227px] w-[143px] h-[10px] md:h-[15px] " src="images/icons/company-logo.svg"
@@ -670,24 +671,24 @@
 										</div>
 									</div>
 									<div class="flex md:flex-nowrap flex-wrap gap-3 sm:justify-normal justify-between">
-										<div class="error-box">
-											<input class="form-input 480:min-w-[108px] 480:max-w-fit max-w-[148px]" type="number"
-												placeholder="Длина, см">
+										<div class="error-box md:flex-[auto] flex-1">
+											<input class="form-input 480:min-w-[108px] md:max-w-fit 480:max-w-full max-w-[155px]"
+												type="number" placeholder="Длина, см">
 											<p class="error_input hidden text-red text-sm mt-1 leading-[22px]">Обязательное поле</p>
 										</div>
-										<div class="error-box">
-											<input class="form-input 480:min-w-[115px] 480:max-w-fit max-w-[148px]" type="number"
-												placeholder="Ширина, см">
+										<div class="error-box md:flex-[auto] flex-1">
+											<input class="form-input 480:min-w-[115px] md:max-w-fit 480:max-w-full max-w-[155px]"
+												type="number" placeholder="Ширина, см">
 											<p class="error_input hidden text-red text-sm mt-1 leading-[22px]">Обязательное поле</p>
 										</div>
-										<div class="error-box">
-											<input class="form-input 480:min-w-[115px] 480:max-w-fit max-w-[148px]" type="number"
-												placeholder="Высота, см ">
+										<div class="error-box md:flex-[auto] flex-1">
+											<input class="form-input 480:min-w-[115px] md:max-w-fit 480:max-w-full max-w-[155px]"
+												type="number" placeholder="Высота, см ">
 											<p class="error_input hidden text-red text-sm mt-1 leading-[22px]">Обязательное поле</p>
 										</div>
-										<div class="error-box">
-											<input class="form-input 480:min-w-[102px] 480:max-w-fit max-w-[148px]" type="number"
-												placeholder="Вес, кг">
+										<div class="error-box md:flex-[auto] flex-1">
+											<input class="form-input 480:min-w-[102px] md:max-w-fit 480:max-w-full max-w-[155px]"
+												type="number" placeholder="Вес, кг">
 											<p class="error_input hidden text-red text-sm mt-1 leading-[22px]">Обязательное поле</p>
 										</div>
 									</div>
@@ -703,7 +704,7 @@
 							</div>
 							<div
 								class="flex justify-between gap-3 mt-[6px] flex-wrap sm:pb-0 pb-[23px] sm:border-none border-b border-stroke">
-								<div class="flex-1 1440:max-w-[176px] sm:max-w-fit max-w-[195px] 1440:min-w-[auto] sm:min-w-[210px]">
+								<div class="flex-1 1440:max-w-[176px] sm:max-w-fit max-w-[208px] 1440:min-w-[auto] sm:min-w-[210px]">
 									<div class="flex my-[10px] gap-[6px] items-center">
 										<p class="form-info">Брак, %</p>
 										<div class="relative cursor-pointer group">
@@ -731,7 +732,7 @@
 									</div>
 									<input class="form-input" type="number" disabled placeholder="0">
 								</div>
-								<div class="flex-1 sm:min-w-[324px] sm:max-w-fit max-w-[195px] 1440:w-full">
+								<div class="flex-1 sm:min-w-[324px] sm:max-w-fit max-w-[208px] 1440:w-full">
 									<div class="flex items-center my-[10px] gap-[6px]">
 										<p class="form-info">Хранение 1 ед. в день, ₽</p>
 										<div class="relative cursor-pointer group">
@@ -814,10 +815,10 @@
 								</div>
 							</div>
 
-							<h6 class="form-title mt-8">Ваш товар</h6>
 							<div
-								class="flex justify-between gap-3 gap-y-[6px] flex-wrap sm:border-none sm:pb-0 pb-[23px] sm:bordder-0 border-b border-stroke">
-								<div class="flex-1 md:max-w-[328px]">
+								class="flex justify-between gap-3 gap-y-[6px] flex-wrap sm:border-none sm:pb-0 pb-[23px] sm:bordder-0 border-b border-stroke items-end">
+								<div class="flex-1 md:max-w-[290px]">
+									<h6 class="form-title mt-8">Налоги</h6>
 									<div class="flex my-[10px] gap-[6px] items-center">
 										<p class="form-info">Налоговый режим</p>
 										<div class="relative cursor-pointer group">
@@ -884,6 +885,7 @@
 									<input class="form-input" type="number" placeholder="0" disabled>
 								</div>
 								<div class="flex-1">
+									<h6 class="form-title mt-8">Прочее</h6>
 									<div class="flex my-[10px] gap-[6px] items-center">
 										<p class="form-info">Прочие расходы, ₽</p>
 										<div class="relative cursor-pointer group">
@@ -891,7 +893,8 @@
 											<div
 												class="absolute hidden group-hover:block top-full mt-[11px] cursor-auto left-1/2 -translate-x-1/2 bg-dark-3 z-50 rounded-[5px] w-[330px] tooltip-box">
 												<div class="relative py-[5px] px-[14px]">
-													<div class="absolute top-[-5px] left-1/2 -translate-x-1/2 w-3 h-3 bg-dark-3 rotate-45"></div>
+													<div class="absolute top-[-5px] left-1/2 -translate-x-1/2 w-3 h-3 bg-dark-3 rotate-45">
+													</div>
 													<p class="text-sm leading-[20px] text-white">
 														Является не обязательным для заполнения блоком
 													</p>
@@ -907,16 +910,16 @@
 							</div>
 							<div class="form-accordion overflow-hidden">
 								<button class="open-box flex items-center gap-[7px] sm:mt-8 mt-6">
-									<h6 class="form-title">Ваш товар</h6>
-									<svg class="rotate-180 duration-300 transition-all" width="14" height="8" viewBox="0 0 14 8"
-										fill="none" xmlns="http://www.w3.org/2000/svg">
+									<h6 class="form-title">Расчет партии</h6>
+									<svg class="rotate-0 duration-300 transition-all" width="14" height="8" viewBox="0 0 14 8" fill="none"
+										xmlns="http://www.w3.org/2000/svg">
 										<path
 											d="M1.41429 1.03569L1.41428 1.03571L1.41709 1.03846L6.76709 6.26346L7.0011 6.492L7.23403 6.26235L12.584 0.987348L12.584 0.987354L12.5857 0.98569C12.6805 0.890864 12.8195 0.890865 12.9143 0.98569C13.0088 1.08024 13.0091 1.21864 12.9151 1.31345C12.9149 1.31373 12.9146 1.31401 12.9143 1.31429L7.16637 6.96223L7.16636 6.96222L7.16429 6.96429C7.06798 7.06059 7.02312 7.06665 6.99999 7.06665C6.94107 7.06665 6.89002 7.05222 6.82025 6.99909L1.08487 1.36345C0.990872 1.26865 0.991148 1.13024 1.0857 1.03569C1.18052 0.940865 1.31947 0.940865 1.41429 1.03569Z"
 											fill="#374151" stroke="#374151" stroke-width="0.666667" />
 									</svg>
 								</button>
 								<div class="content-box duration-300 origin-top h-0 transition-all">
-									<p class="form-info mt-2 mb-4">Рассчитывайте прибыльность партии исходя из планируемой суммы
+									<p class="form-info mt-2 mb-[10px]">Рассчитывайте прибыльность партии исходя из планируемой суммы
 										инвестиций
 										в
 										товар.
@@ -1177,7 +1180,7 @@
 					<div class="tab-content">
 						<div class="flex items-center justify-between sm:gap-8 gap-4 lg:flex-nowrap flex-wrap  mt-8 xl:px-[96px]">
 							<div class="flex-1 bg-white border border-stroke rounded-3xl sm:p-8 p-6 counter">
-								<p class="text-purple leading-6">SEO-оптимизация</p>
+								<p class="text-purple font-semibold leading-6">SEO-оптимизация</p>
 								<h3
 									class="font-bold leading-[28px] text-[28px] text-dark-2 mt-4 sm:text-[40px] sm:leading-[48px] gap-1 flex items-end">
 									<span class="count-price">3
@@ -1277,7 +1280,7 @@
 								</div>
 							</div>
 							<div class="flex-1 bg-white border border-stroke rounded-3xl sm:p-8 p-6 counter">
-								<p class="text-purple leading-6">Консультация</p>
+								<p class="text-purple font-semibold leading-6">Консультация</p>
 								<h3
 									class="font-bold leading-[28px] text-[28px] text-dark-2 mt-4 sm:text-[40px] sm:leading-[48px] flex items-end">
 									2 000₽
@@ -1368,7 +1371,7 @@
 					<div class="tab-content">
 						<div class="flex items-center justify-between sm:gap-8 gap-4 lg:flex-nowrap flex-wrap  mt-8 xl:px-[96px]">
 							<div class="flex-1 border border-stroke rounded-3xl p-8 counter bg-white">
-								<p class="text-blue leading-6">SEO-оптимизация</p>
+								<p class="text-blue font-semibold leading-6">SEO-оптимизация</p>
 								<h3
 									class="font-bold leading-[28px] text-[28px] text-dark-2 mt-4 sm:text-[40px] sm:leading-[48px] gap-1 flex items-end">
 									<span class="count-price">3
@@ -1441,7 +1444,7 @@
 										Пишем SEO описание на 1000-1500 знаков
 									</li>
 									<li class="flex items-center gap-3 text-primary text-sm leading-[22px]">
-										<svg width="20" height="20" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<svg class="shrink-0" width="20" height="20" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
 											<path
 												d="M9 16.5C13.125 16.5 16.5 13.125 16.5 9C16.5 4.875 13.125 1.5 9 1.5C4.875 1.5 1.5 4.875 1.5 9C1.5 13.125 4.875 16.5 9 16.5Z"
 												stroke="#2D68F8" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" />
@@ -1477,7 +1480,7 @@
 								</div>
 							</div>
 							<div class="flex-1 border border-stroke rounded-3xl p-8 counter bg-white">
-								<p class="text-blue leading-6">Консультация</p>
+								<p class="text-blue font-semibold leading-6">Консультация</p>
 								<h3
 									class="font-bold leading-[28px] text-[28px] text-dark-2 mt-4 sm:text-[40px] sm:leading-[48px] flex items-end">
 									2 000₽
@@ -1548,7 +1551,7 @@
 										Пишем SEO описание на 1000-1500 знаков
 									</li>
 									<li class="flex items-center gap-3 text-primary text-sm leading-[22px]">
-										<svg width="20" height="20" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<svg class="shrink-0" width="20" height="20" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
 											<path
 												d="M9 16.5C13.125 16.5 16.5 13.125 16.5 9C16.5 4.875 13.125 1.5 9 1.5C4.875 1.5 1.5 4.875 1.5 9C1.5 13.125 4.875 16.5 9 16.5Z"
 												stroke="#2D68F8" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" />
@@ -1567,7 +1570,7 @@
 						class="flex items-center md:flex-nowrap flex-wrap bg-white justify-between xl:mx-[96px] sm:p-8 p-6 border border-stroke rounded-3xl gap-4 mt-8">
 						<div class="space-y-[6px] max-w-[732px]">
 							<h5 class="text-purple leading-[26px] text-lg font-medium">Уникальное предложение</h5>
-							<p class="leading-6 text-primary ">
+							<p class="sm:leading-6 leading-[22px] text-primary font-normal">
 								Благодаря нашему комплексу SEO-оптимизации Вы получаете кратный рост переходов по ключевым запросам из
 								поиска
 								маркетплейса и поисковых систем Яндекс и Google.
@@ -1952,9 +1955,10 @@
 						</div>
 						<div class="flex gap-4 items-center">
 							<div class="flex">
-								<img class="-mr-2 relative z-10" src="images/avatar-1.svg" alt="avatar-1">
-								<img class="-mr-2 relative" src="images/avatar-2.svg" alt="avatar-1">
-								<img class="-ml-" src="images/avatar-2.svg" alt="avatar-1">
+								<img class="-mr-2 relative z-10 border border-white rounded-full" src="images/avatar-1.svg"
+									alt="avatar-1">
+								<img class="-mr-2 border border-white rounded-full relative" src="images/avatar-2.svg" alt="avatar-1">
+								<img class="border border-white rounded-full" src="images/avatar-2.svg" alt="avatar-1">
 							</div>
 							<div>
 								<h6 class="text-sm leading-[22px]">Юрий, Юлия, Елена</h6>
@@ -1984,7 +1988,7 @@
 							</p>
 						</div>
 						<div class="flex gap-4 items-center">
-							<img src="images/avatar-1.svg" alt="avatar-1">
+							<img class="border border-white rounded-full" src="images/avatar-1.svg" alt="avatar-1">
 							<div>
 								<h6 class="text-sm leading-[22px]">Юрий Стрельцов</h6>
 								<p class="text-sm leading-[22px] text-secondary">Основатель сервиса</p>
@@ -2014,9 +2018,12 @@
 						</div>
 						<div class="flex gap-4 items-center">
 							<div class="flex">
-								<img class="-mr-2 relative z-10" src="images/avatar-1.svg" alt="avatar-1">
-								<img class="-mr-2 relative" src="images/avatar-2.svg" alt="avatar-1">
-								<img class="-ml-" src="images/avatar-2.svg" alt="avatar-1">
+								<img class="-mr-2 relative z-10 border border-white rounded-full" src="images/avatar-1.svg"
+									alt="avatar-1">
+								<img class="-mr-2 relative z-10 border border-white rounded-full" src="images/avatar-1.svg"
+									alt="avatar-1">
+								<img class="-mr-2 relative border border-white rounded-full" src="images/avatar-2.svg" alt="avatar-1">
+								<img class="border border-white rounded-full" src="images/avatar-2.svg" alt="avatar-1">
 							</div>
 							<div>
 								<h6 class="text-sm leading-[22px]">Юрий, Юлия, Елена</h6>
@@ -2040,12 +2047,9 @@
 							alt="company-logo" width="227" height="15">
 					</a>
 					<p
-						class="text-[#6B7280] md:mx-0 mx-auto 480:text-base text-xs leading-6 max-w-[453px] md:text-right text-center">
-						Калькулятор
-						UNIT-экономики цены,
-						доставки и
-						хранения
-						на Wildberries для FBO и FBS актуальный на 2024 год.</p>
+						class="text-[#6B7280] md:mx-0 mx-auto 480:text-base text-xs leading-6 max-w-[455px] md:text-right text-center">
+						Калькулятор UNIT-экономики цены, доставки и хранения на Wildberries для FBO и FBS актуальный на 2024 год.
+					</p>
 				</div>
 			</div>
 		</footer>
