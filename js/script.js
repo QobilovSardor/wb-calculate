@@ -295,7 +295,7 @@ document.addEventListener('DOMContentLoaded', () => {
 						})
 						switch (countNumber) {
 							case 1:
-								countPrice.textContent = '35 00₽';
+								countPrice.textContent = '3 500₽';
 								break;
 							case 2:
 								countPrice.textContent = '7000₽';
@@ -371,89 +371,6 @@ document.addEventListener('DOMContentLoaded', () => {
 			var separator = " ";
 			return n.replace(/(\d{1,3}(?=(?:\d\d\d)+(?!\d)))/g, "$1" + separator);
 		}
-
-		// const counters = document.querySelectorAll('.counter');
-
-		// if (counters) {
-		// 	counters.forEach(counter => {
-		// 		const plusCount = counter.querySelector('.plus-count');
-		// 		const minusCount = counter.querySelector('.minus-count');
-		// 		const count = counter.querySelector('.count');
-		// 		const countPrice = counter.querySelector('.count-price');
-		// 		prettify(count);
-
-		// 		let countNumber = 1;
-
-		// 		const updateCounter = () => {
-		// 			count.textContent = `${countNumber} карточка`;
-		// 			switch (countNumber) {
-		// 				case 1:
-		// 					countPrice.textContent = '3500₽';
-		// 					break;
-		// 				case 2:
-		// 					countPrice.textContent = '7000₽';
-		// 					break;
-		// 				case 3:
-		// 					countPrice.textContent = '9975₽';
-		// 					break;
-		// 				case 4:
-		// 					countPrice.textContent = '13300₽';
-		// 					break;
-		// 				case 5:
-		// 					countPrice.textContent = '16625₽';
-		// 					break;
-		// 				case 6:
-		// 					countPrice.textContent = '19950₽';
-		// 					break;
-		// 				case 7:
-		// 					countPrice.textContent = '23275₽';
-		// 					break;
-		// 				case 8:
-		// 					countPrice.textContent = '26600₽';
-		// 					break;
-		// 				case 9:
-		// 					countPrice.textContent = '29925₽';
-		// 					break;
-		// 				case 10:
-		// 					countPrice.textContent = '33250₽';
-		// 					break;
-		// 				default:
-		// 					break;
-		// 			}
-		// 		};
-
-		// 		const calculatePrice = () => {
-		// 			if (countNumber <= 10) {
-		// 				if (countNumber <= 2) {
-		// 					currentCountPrice = countNumber * 3500;
-		// 				} else {
-		// 					currentCountPrice = countNumber * 3325;
-		// 				}
-		// 				countPrice.textContent = prettify(currentCountPrice) + '₽';
-		// 			}
-		// 		};
-
-		// 		if (plusCount) {
-		// 			plusCount.addEventListener('click', () => {
-		// 				if (countNumber < 10) {
-		// 					countNumber++;
-		// 					calculatePrice();
-		// 				}
-		// 			});
-		// 		}
-
-		// 		if (minusCount) {
-		// 			minusCount.addEventListener('click', () => {
-		// 				if (countNumber > 1) {
-		// 					countNumber--;
-		// 					calculatePrice();
-		// 				}
-		// 			});
-		// 		}
-
-		// 		updateCounter();
-		// 	});
-		// }
 
 	} catch (error) {
 		throw error
