@@ -23,7 +23,7 @@
 				<header class="md:pt-8 992:px-8 md:pb-[22px] py-[14px]">
 					<div class="container flex items-center md:justify-normal justify-between">
 						<div class="flex items-center gap-4 md:justify-normal justify-between md:w-fit w-full">
-							<button class="z-[100] md:hidden menu-btn relative space-y-1">
+							<button class="z-[103] md:hidden menu-btn relative space-y-1">
 								<!-- <span class="w-[18px] duration-200 transition-all h-[1.5px] bg-dark-2 rounded-full block"></span>
 								<span class="w-[18px] duration-200 transition-all h-[1.5px] bg-dark-2 rounded-full block"></span>
 								<span class="w-[9px] h-[1.5px] bg-dark-5 rounded-full block"></span> -->
@@ -34,12 +34,10 @@
 									alt="company-logo" width="227" height="15">
 							</a>
 						</div>
-
 						<nav
-							class="md:relative nav absolute md:top-auto md:left-auto top-0  md:bg-transparent bg-[#4F3F6ACC] md:w-auto w-full md:min-h-fit md:h-auto min-h-lvh h-full z-50 mx-0 -left-0 duration-300 transition-all md:mx-auto">
-
+							class="nav z-[102] md:relative absolute md:top-auto md:left-auto top-0 md:bg-transparent md:w-auto w-full md:min-h-fit md:h-auto min-h-lvh h-full mx-0 -left-0 duration-300 transition-all md:mx-auto">
 							<ul
-								class="flex nav-item md:bg-transparent relative -left-full md:pt-0 pt-[70px] md:min-h-fit md:h-fit min-h-lvh h-full md:w-auto w-[324px] bg-white md:flex-row flex-col md:gap-10 gap-1 m-0 md:p-auto px-3">
+								class="flex md:bg-transparent relative md:pt-0 pt-[70px] md:min-h-fit md:h-fit min-h-lvh h-full md:w-auto w-[324px] bg-white md:flex-row flex-col md:gap-10 gap-1 m-0 md:p-auto px-3">
 								<img class="md:hidden block absolute top-[30px] right-4 z-[101]" width="38" height="12"
 									src="images/icons/logo.svg" alt="">
 								<li class="sm:border-none border-t border-stroke md:pt-0 pt-4">
@@ -112,7 +110,7 @@
 								</div>
 							</ul>
 						</nav>
-
+						<div class="nav-bg absolute left-0 top-0 bg-[#4F3F6ACC] w-full h-full z-[101]"></div>
 						<div class="flex lg:max-w-[227px] max-w-[100px] 992:w-full justify-end">
 							<div class="bg-[#FFFFFF33] border border-gray-3 rounded-lg p-[10px] cursor-pointer">
 								<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -162,11 +160,11 @@
 				</div>
 			</section>
 
-			<section class="md:mt-[-116px] mt-[-50px]">
+			<section class="md:mt-[-116px] mt-[-50px] advertising-card">
 				<div class="container">
 					<div
 						class="bg-white border border-[#33B058] flex-wrap rounded-[20px] sm:pl-8 p-4 sm:pr-[48px] sm:py-8 flex items-center gap-4 justify-between relative">
-						<button class="close-btn absolute top-[14px] right-[14px]">
+						<button class="close-btn absolute top-[14px] right-[14px]" id="close-btn">
 							<svg width="37" height="37" viewBox="0 0 37 37" fill="none" xmlns="http://www.w3.org/2000/svg">
 								<path d="M11.849 24.5771L24.5769 11.8492" stroke="#BDBDBD" stroke-width="1.5" stroke-linecap="round"
 									stroke-linejoin="round" />

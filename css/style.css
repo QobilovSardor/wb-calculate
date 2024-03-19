@@ -211,17 +211,34 @@ input[type=number]::-webkit-outer-spin-button {
 	@apply stroke-red;
 }
 
-header .nav-item,
-header .nav {
-	transition: left ease 0.8s;
+
+
+header .nav-bg {
+	@apply hidden;
+	animation: foo 0.3s ease;
+}
+
+@keyframes foo {
+	0% {
+		opacity: 0;
+	}
+
+	100% {
+		opacity: 1;
+	}
+}
+
+header .nav-bg.active {
+	@apply block
 }
 
 header .nav {
-	visibility: hidden;
+	@apply md:left-auto -left-full;
+	transition: left ease 0.6s;
 }
 
 header .nav.active {
-	visibility: visible;
+	@apply left-0
 }
 
 .menu-btn,
@@ -261,9 +278,6 @@ header .nav.active {
 	transition: top ease .3s, transform ease .3s .3s;
 }
 
-header .nav-item.active {
-	@apply left-0;
-}
 
 .kurs-boxes {
 	display: flex;

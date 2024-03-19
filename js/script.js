@@ -1,20 +1,28 @@
 document.addEventListener('DOMContentLoaded', () => {
 	// responsive menu
 	const menuBtn = document.querySelector('.menu-btn');
-	const navItem = document.querySelector("header .nav-item");
 	const nav = document.querySelector("header .nav");
+	const navBg = document.querySelector('.nav-bg');
+
 	menuBtn.addEventListener('click', () => {
-		navItem.classList.toggle('active');
 		menuBtn.classList.toggle('active');
 		nav.classList.toggle('active');
+		navBg.classList.toggle('active');
 	})
 
 	nav.addEventListener('click', (e) => {
 		if (e.target && e.target.classList.contains('nav')) {
-			navItem.classList.remove('active');
 			menuBtn.classList.remove('active');
 			nav.classList.remove('active');
+			navBg.classList.remove('active');
 		}
+	})
+
+	// advertising box
+	const advertisingCard = document.querySelector('.advertising-card');
+	const closeBtn = document.querySelector('#close-btn');
+	closeBtn.addEventListener('click', () => {
+		advertisingCard.classList.add('hidden');
 	})
 
 	// // validate input
@@ -338,64 +346,6 @@ document.addEventListener('DOMContentLoaded', () => {
 				updateCounter();
 			});
 		}
-
-		// counter
-		// const counters = document.querySelectorAll('.counter');
-
-		// if (counters) {
-		// 	counters.forEach(counter => {
-		// 		const plusCount = counter.querySelector('.plus-count');
-		// 		const minusCount = counter.querySelector('.minus-count');
-		// 		const count = counter.querySelectorAll('.count');
-		// 		const countPrice = counter.querySelector('.count-price');
-
-		// 		let countNumber = 1;
-		// 		let currentCountPrice = 3500;
-		// 		/* 
-		// 						Как считаем:
-		// 		1 = (1х3500) = 3500
-		// 		2 = (2х3500) = 7000
-		// 		3 = (3х3325) = 9975
-		// 		4 = (4х3325) = 13300
-		// 		5 = (5х3325) = 16625
-		// 		6 = (6х3325) = 19950
-		// 		7 = (7х3325) = 23275
-		// 		8 = (8х3325) = 26600
-		// 		9 = (9х3325) = 29925
-		// 		10 = (10х3325) = 33250
-		// 		*/
-		// 		const updateCounter = () => {
-		// 			count.forEach(item => {
-		// 				if (countNumber <= 10) {
-		// 					item.textContent = `${countNumber} карточка`;
-		// 					countPrice.textContent = `${currentCountPrice}₽`;
-		// 				}
-		// 			});
-		// 		};
-
-		// 		if (plusCount) {
-		// 			plusCount.addEventListener('click', () => {
-		// 				if (currentCountPrice < 8000) {
-		// 					countNumber++;
-		// 					currentCountPrice += 500
-		// 				};
-		// 				updateCounter();
-		// 			});
-		// 		}
-
-		// 		if (minusCount) {
-		// 			minusCount.addEventListener('click', () => {
-		// 				if (countNumber > 1) {
-		// 					if (currentCountPrice >= 3500) {
-		// 						countNumber--;
-		// 						currentCountPrice -= 500
-		// 					};
-		// 					updateCounter();
-		// 				}
-		// 			});
-		// 		}
-		// 	});
-		// }
 	} catch (error) {
 		throw error
 	}
