@@ -328,7 +328,7 @@ header .nav.active {
 }
 
 
-@media screen and (max-width: 1460px) {
+@media screen and (max-width: 1400px) {
 	.container {
 		@apply max-w-full px-4;
 	}

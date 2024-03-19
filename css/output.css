@@ -937,6 +937,14 @@ video {
   min-width: 95px;
 }
 
+.min-w-\[\] {
+  min-width: ;
+}
+
+.min-w-\[384px\] {
+  min-width: 384px;
+}
+
 .max-w-\[100px\] {
   max-width: 100px;
 }
@@ -1145,6 +1153,24 @@ video {
   --tw-space-y-reverse: 0;
   margin-top: calc(6px * calc(1 - var(--tw-space-y-reverse)));
   margin-bottom: calc(6px * var(--tw-space-y-reverse));
+}
+
+.space-x-0 > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-x-reverse: 0;
+  margin-right: calc(0px * var(--tw-space-x-reverse));
+  margin-left: calc(0px * calc(1 - var(--tw-space-x-reverse)));
+}
+
+.space-y-0 > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-y-reverse: 0;
+  margin-top: calc(0px * calc(1 - var(--tw-space-y-reverse)));
+  margin-bottom: calc(0px * var(--tw-space-y-reverse));
+}
+
+.space-y-8 > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-y-reverse: 0;
+  margin-top: calc(2rem * calc(1 - var(--tw-space-y-reverse)));
+  margin-bottom: calc(2rem * var(--tw-space-y-reverse));
 }
 
 .overflow-hidden {
@@ -2307,7 +2333,7 @@ header .nav.active {
   }
 }
 
-@media screen and (max-width: 1460px) {
+@media screen and (max-width: 1400px) {
   .container {
     max-width: 100%;
     padding-left: 1rem;
@@ -2970,6 +2996,10 @@ header .nav.active {
 
   .lg\:max-w-\[45\%\] {
     max-width: 45%;
+  }
+
+  .lg\:max-w-\[615px\] {
+    max-width: 615px;
   }
 
   .lg\:flex-nowrap {
