@@ -14,23 +14,67 @@ document.addEventListener('DOMContentLoaded', () => {
 		}
 	})
 
-	// validate input
-	const errorBox = document.querySelectorAll('.error-box');
+	// // validate input
+	// const errorBox = document.querySelectorAll('.error-box');
 
-	errorBox.forEach(box => {
-		const validateInput = box.querySelector('.form-input');
-		const errorText = box.querySelector('.error_input');
+	// errorBox.forEach(box => {
+	// 	const validateInput = box.querySelector('.form-input');
+	// 	const errorText = box.querySelector('.error_input');
 
-		validateInput.addEventListener('input', () => {
-			const inputValue = validateInput.value.trim();
-			if (!inputValue) {
-				errorText.classList.remove('hidden');
-				validateInput.classList.add('warning')
-			} else {
-				errorText.classList.add('hidden');
-			}
-		})
-	})
+	// 	validateInput.addEventListener("keypress", function (evt) {
+	// 		if (evt.which != 8 && evt.which != 0 && evt.which < 48 || evt.which > 57) {
+	// 			evt.preventDefault();
+	// 		}
+	// 	});
+
+	// 	validateInput.addEventListener('input', () => {
+	// 		const inputValue = validateInput.value.trim();
+	// 		if (!inputValue) {
+	// 			errorText.classList.remove('hidden');
+	// 			validateInput.classList.add('warning');
+	// 		} else {
+	// 			errorText.classList.add('hidden');
+	// 		}
+	// 	})
+	// })
+
+	function initializeInputValidation() {
+		const errorBoxes = document.querySelectorAll('.error-box');
+
+		errorBoxes.forEach(box => {
+			const validateInput = box.querySelector('.form-input');
+			const errorText = box.querySelector('.error_input');
+
+			validateInput.addEventListener("keypress", function (evt) {
+				if (evt.which != 8 && evt.which != 0 && (evt.which < 48 || evt.which > 57)) {
+					evt.preventDefault();
+				}
+			});
+
+			validateInput.addEventListener('input', () => {
+				const inputValue = validateInput.value.trim();
+				if (!inputValue) {
+					setInputWarning(validateInput, errorText);
+				} else {
+					removeInputWarning(validateInput, errorText);
+				}
+			});
+		});
+	}
+
+	function setInputWarning(inputElement, errorElement) {
+		errorElement.classList.remove('hidden');
+		inputElement.classList.add('warning');
+	}
+
+	function removeInputWarning(inputElement, errorElement) {
+		errorElement.classList.add('hidden');
+		inputElement.classList.remove('warning');
+	}
+
+	// Validate Inputni boshqarishni boshlang
+	initializeInputValidation();
+
 
 	// validate select 
 	const warningText = document.querySelectorAll('.warning-text');
@@ -46,8 +90,13 @@ document.addEventListener('DOMContentLoaded', () => {
 		const options = dropdown.querySelector('.option');
 		const optionItems = options.querySelectorAll('.option-item');
 		const clearIcon = dropdown.querySelector(".clear-icon");
-		const loaderIcon = dropdown.querySelector('.circle-icon')
+		const loaderIcon = dropdown.querySelector('.circle-icon');
+		const checkIcon = dropdown.querySelector('.check-icon');
+		const calculateInput = document.querySelector('.calculate-input');
 
+		if (options.classList.contains('calculate-option')) {
+			optionItems[0].classList.add('active');
+		}
 		dropdownErrors[idx] = 0;
 
 		clearIcon.addEventListener('click', () => {
@@ -57,14 +106,23 @@ document.addEventListener('DOMContentLoaded', () => {
 			dropdownErrors[idx] = 0;
 			warningText[idx].classList.remove('hidden');
 			textBox.classList.add('error');
-			optionItems.forEach(el => el.classList.remove('active'))
-		})
+			optionItems.forEach(el => el.classList.remove('active'));
+		});
 
 		optionItems.forEach((item) => {
 			item.addEventListener('click', function () {
 				optionItems.forEach(el => {
 					el.classList.remove('active');
-				})
+				});
+				if (options.classList.contains('calculate-option')) {
+					optionItems[0].classList.remove('active');
+				}
+
+				if (item.classList.contains('calculate-item')) {
+					calculateInput.value = 15;
+				} else {
+					calculateInput.value = 6;
+				}
 
 				show(item.textContent.trim(), textBox, options);
 				clearIcon.classList.add('block');
@@ -86,13 +144,12 @@ document.addEventListener('DOMContentLoaded', () => {
 			this.parentNode.classList.add('active');
 			dropdownErrors[idx] = 1;
 		});
-
 	}
 
-
-	// Initialize each dropdown
+	// Har bir dropdownni boshlang'ichlashtirish
 	const dropdowns = document.querySelectorAll('.sellect-dropdown');
 	dropdowns.forEach(initializeDropdown);
+
 
 	document.addEventListener('click', (event) => {
 
@@ -184,7 +241,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
 		const fullText = customerComment.textContent;
 		const maxLength = 167;
-		
+
 		if (fullText.length > maxLength) {
 			const trimmedText = fullText.slice(0, maxLength) + '...';
 			customerComment.textContent = trimmedText;

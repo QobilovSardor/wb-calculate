@@ -22,13 +22,13 @@
 				<!-- header -->
 				<header class="md:pt-8 992:px-8 md:pb-[22px] py-[14px]">
 					<div class="container flex items-center md:justify-normal justify-between">
-						<div class="flex items-center gap-4">
+						<div class="flex items-center gap-4 md:justify-normal justify-between md:w-fit w-full">
 							<button class="z-[100] md:hidden menu-btn space-y-1">
 								<span class="w-[18px] duration-200 transition-all h-[1.5px] bg-dark-2 rounded-full block"></span>
 								<span class="w-[18px] duration-200 transition-all h-[1.5px] bg-dark-2 rounded-full block"></span>
 								<span class="w-[9px] h-[1.5px] bg-dark-5 rounded-full block"></span>
 							</button>
-							<a href="#!">
+							<a class="md:mx-0 mx-auto" href="#!">
 								<img class="md:w-[227px] w-[143px] h-[10px] md:h-[15px] " src="images/icons/company-logo.svg"
 									alt="company-logo" width="227" height="15">
 							</a>
@@ -354,7 +354,7 @@
 										<img class="form-star" src="images/icons/form-star.svg" alt="form-star" width="">
 									</div>
 									<div class="error-box">
-										<input class="form-input" type="text">
+										<input class="form-input" type="number">
 										<p class="error_input hidden text-red text-sm mt-1 leading-[22px]">Обязательное поле</p>
 									</div>
 								</div>
@@ -364,7 +364,7 @@
 										<img class="form-star" src="images/icons/form-star.svg" alt="form-star" width="">
 									</div>
 									<div class="error-box">
-										<input class="form-input" type="text">
+										<input class="form-input" type="number">
 										<p class="error_input hidden text-red text-sm mt-1 leading-[22px]">Обязательное поле</p>
 									</div>
 								</div>
@@ -426,7 +426,7 @@
 										</div>
 									</div>
 									<div class="error-box">
-										<input class="form-input" type="text">
+										<input class="form-input" type="number">
 										<p class="error_input hidden text-red text-sm mt-1 leading-[22px]">Обязательное поле</p>
 									</div>
 								</div>
@@ -459,7 +459,7 @@
 										</div>
 									</div>
 									<div class="error-box">
-										<input class="form-input" type="text" placeholder="Стоимость упаковки за 1 ед.">
+										<input class="form-input" type="number" placeholder="Стоимость упаковки за 1 ед.">
 										<p class="error_input hidden text-red text-sm mt-1 leading-[22px]">Обязательное поле</p>
 									</div>
 								</div>
@@ -492,7 +492,7 @@
 										</div>
 									</div>
 									<div class="error-box">
-										<input class="form-input" type="text">
+										<input class="form-input" type="number">
 										<p class="error_input hidden text-red text-sm mt-1 leading-[22px]">Обязательное поле</p>
 									</div>
 								</div>
@@ -525,7 +525,7 @@
 										</div>
 									</div>
 									<div class="error-box">
-										<input class="form-input" type="text" placeholder="Стоимость упаковки за 1 ед.">
+										<input class="form-input" type="number" placeholder="Стоимость упаковки за 1 ед.">
 										<p class="error_input hidden text-red text-sm mt-1 leading-[22px]">Обязательное поле</p>
 									</div>
 								</div>
@@ -632,13 +632,13 @@
 												</div>
 											</div>
 										</div>
-										<input class="form-input" type="text" disabled placeholder="0">
+										<input class="form-input" type="number" disabled placeholder="0">
 									</div>
 									<div class="flex-1 480:min-w-[102px] 1440:w-full min-w-[102px]">
 										<div class="flex my-[10px]">
 											<p class="form-info">В рублях</p>
 										</div>
-										<input class="form-input" type="text" disabled placeholder="0">
+										<input class="form-input" type="number" disabled placeholder="0">
 									</div>
 								</div>
 								<div class="flex-1">
@@ -671,22 +671,22 @@
 									</div>
 									<div class="flex md:flex-nowrap flex-wrap gap-3">
 										<div class="error-box">
-											<input class="form-input 480:min-w-[108px] 480:max-w-fit max-w-[155px]" type="text"
+											<input class="form-input 480:min-w-[108px] 480:max-w-fit max-w-[155px]" type="number"
 												placeholder="Длина, см">
 											<p class="error_input hidden text-red text-sm mt-1 leading-[22px]">Обязательное поле</p>
 										</div>
 										<div class="error-box">
-											<input class="form-input 480:min-w-[115px] 480:max-w-fit max-w-[155px]" type="text"
+											<input class="form-input 480:min-w-[115px] 480:max-w-fit max-w-[155px]" type="number"
 												placeholder="Ширина, см">
 											<p class="error_input hidden text-red text-sm mt-1 leading-[22px]">Обязательное поле</p>
 										</div>
 										<div class="error-box">
-											<input class="form-input 480:min-w-[115px] 480:max-w-fit max-w-[155px]" type="text"
+											<input class="form-input 480:min-w-[115px] 480:max-w-fit max-w-[155px]" type="number"
 												placeholder="Высота, см ">
 											<p class="error_input hidden text-red text-sm mt-1 leading-[22px]">Обязательное поле</p>
 										</div>
 										<div class="error-box">
-											<input class="form-input 480:min-w-[102px] 480:max-w-fit max-w-[155px]" type="text"
+											<input class="form-input 480:min-w-[102px] 480:max-w-fit max-w-[155px]" type="number"
 												placeholder="Вес, кг">
 											<p class="error_input hidden text-red text-sm mt-1 leading-[22px]">Обязательное поле</p>
 										</div>
@@ -697,7 +697,7 @@
 										<p class="form-info">В рублях</p>
 									</div>
 									<div class="flex gap-4">
-										<input class="form-input min-w-[102px]" type="text" placeholder="0" disabled>
+										<input class="form-input min-w-[102px]" type="number" placeholder="0" disabled>
 									</div>
 								</div>
 							</div>
@@ -720,7 +720,7 @@
 										</div>
 									</div>
 									<div class="error-box">
-										<input class="form-input" type="text" placeholder="2">
+										<input class="form-input" type="number" placeholder="2">
 										<p class="error_input hidden text-red text-sm mt-1 leading-[22px]">Обязательное поле</p>
 									</div>
 								</div>
@@ -729,7 +729,7 @@
 									<div class="flex my-[10px]">
 										<p class="form-info">В рублях</p>
 									</div>
-									<input class="form-input" type="text" disabled placeholder="0">
+									<input class="form-input" type="number" disabled placeholder="0">
 								</div>
 								<div class="flex-1 sm:min-w-[324px] sm:max-w-fit max-w-[205px] 1440:w-full">
 									<div class="flex items-center my-[10px] gap-[6px]">
@@ -759,14 +759,14 @@
 											</div>
 										</div>
 									</div>
-									<input class="form-input" type="text" disabled placeholder="0">
+									<input class="form-input" type="number" disabled placeholder="0">
 								</div>
 								<div class="flex-1 1440:max-w-[102px] sm:max-w-fit max-w-[102px] 1440:min-w-[auto] min-w-[102px]">
 									<div class="flex my-[10px] gap-[6px] items-center">
 										<p class="form-info">В рублях</p>
 									</div>
 									<div class="flex gap-4">
-										<input class="form-input min-w-[102px]" type="text" disabled placeholder="0">
+										<input class="form-input min-w-[102px]" type="number" disabled placeholder="0">
 									</div>
 								</div>
 								<div class="flex-1 1440:max-w-[108px] max-w-[auto] 1440:min-w-[auto] min-w-[176px]">
@@ -787,7 +787,7 @@
 									</div>
 									<div class="flex gap-4">
 										<div class="error-box w-full">
-											<input class="form-input" type="text">
+											<input class="form-input" type="number">
 											<p class="error_input hidden text-red text-sm mt-1 leading-[22px]">Обязательное поле</p>
 										</div>
 									</div>
@@ -809,7 +809,7 @@
 										</div>
 									</div>
 									<div class="flex gap-4">
-										<input class="form-input" type="text" placeholder="0" disabled>
+										<input class="form-input" type="number" placeholder="0" disabled>
 									</div>
 								</div>
 							</div>
@@ -833,35 +833,20 @@
 											</div>
 										</div>
 									</div>
-									<div class="sellect-dropdown relative w-full">
+									<div class="sellect-dropdown relative w-full calculate-dropdown">
 										<img class="clear-icon hidden" src="images/icons/close-icon-two.svg" alt="">
-										<input class="select-input textBox" type="text" placeholder="Доходы" readonly="">
+										<input class="select-input textBox" type="tect" placeholder="Доходы" readonly="">
 										<div
-											class="option border border-gray-2 absolute top-full mt-[10px] z-[60] w-full bg-[#fff] rounded-md pl-3 pr-2 py-[10px] overflow-hidden hidden">
-											<div class="option-scroll overflow-y-auto h-[153px] pr-2">
+											class="option calculate-option border border-gray-2 absolute top-full mt-[10px] z-[60] w-full bg-[#fff] rounded-md pl-3 pr-2 py-[10px] overflow-hidden hidden">
+											<div class="option-scroll overflow-y-auto pr-2">
 												<div
 													class="flex items-center justify-between option-item py-[7px] text-base leading-6 text-dark font-normal px-2 cursor-pointer hover:bg-purple-light rounded-md">
-													3D-очки
+													Доходы
 													<img class="check-icon hidden" src="images/icons/check-icon.svg" alt="check">
 												</div>
 												<div
-													class="flex items-center justify-between option-item py-[7px] text-base leading-6 text-dark font-normal px-2 cursor-pointer hover:bg-purple-light rounded-md">
-													3D-очки
-													<img class="check-icon hidden" src="images/icons/check-icon.svg" alt="check">
-												</div>
-												<div
-													class="flex items-center justify-between option-item py-[7px] text-base leading-6 text-dark font-normal px-2 cursor-pointer hover:bg-purple-light rounded-md">
-													3D-очки
-													<img class="check-icon hidden" src="images/icons/check-icon.svg" alt="check">
-												</div>
-												<div
-													class="flex items-center justify-between option-item py-[7px] text-base leading-6 text-dark font-normal px-2 cursor-pointer hover:bg-purple-light rounded-md">
-													3D-очки
-													<img class="check-icon hidden" src="images/icons/check-icon.svg" alt="check">
-												</div>
-												<div
-													class="flex items-center justify-between option-item py-[7px] text-base leading-6 text-dark font-normal px-2 cursor-pointer hover:bg-purple-light rounded-md">
-													3D-очки
+													class="calculate-item flex items-center justify-between option-item py-[7px] text-base leading-6 text-dark font-normal px-2 cursor-pointer hover:bg-purple-light rounded-md">
+													Доходы - расходы
 													<img class="check-icon hidden" src="images/icons/check-icon.svg" alt="check">
 												</div>
 											</div>
@@ -888,7 +873,7 @@
 										</div>
 									</div>
 									<div class="error-box">
-										<input class="form-input" type="text" placeholder="6">
+										<input class="form-input calculate-input" type="number" placeholder="6" value="6">
 										<p class="error_input hidden text-red text-sm mt-1 leading-[22px]">Обязательное поле</p>
 									</div>
 								</div>
@@ -896,7 +881,7 @@
 									<div class="flex my-[10px]">
 										<p class="form-info">В рублях</p>
 									</div>
-									<input class="form-input" type="text" placeholder="0" disabled>
+									<input class="form-input" type="number" placeholder="0" disabled>
 								</div>
 								<div class="flex-1">
 									<div class="flex my-[10px] gap-[6px] items-center">
@@ -915,7 +900,7 @@
 										</div>
 									</div>
 									<div class="error-box">
-										<input class="form-input" type="text">
+										<input class="form-input" type="number">
 										<p class="error_input hidden text-red text-sm mt-1 leading-[22px]">Обязательное поле</p>
 									</div>
 								</div>
@@ -937,7 +922,7 @@
 										товар.
 									</p>
 									<div class="flex gap-4 items-end flex-wrap">
-										<div class="max-w-[328px] w-full">
+										<div class="max-w-[260px] w-full">
 											<div class="flex sm:my-[10px] mb-[10px] mt-[0] gap-[6px] items-center">
 												<p class="form-info">Мои вложения, ₽</p>
 												<div class="relative cursor-pointer group">
@@ -955,14 +940,14 @@
 												</div>
 											</div>
 											<div class="error-box">
-												<input class="form-input" type="text" placeholder="Введите сумму инвестиции">
+												<input class="form-input" type="number" placeholder="Введите сумму инвестиции">
 												<p class="error_input hidden text-red text-sm mt-1 leading-[22px]">Обязательное поле</p>
 											</div>
 										</div>
 										<div
 											class="flex-1 flex flex-col justify-end border border-[#DFE4EA] rounded-md py-[14px] pl-4 pr-[11px] sm:w-auto w-full">
 											<div class="flex mb-1 gap-[6px]">
-												<p class="form-info">Кол-во товара</p>
+												<p class="form-info text-14">Кол-во товара</p>
 												<div class="relative cursor-pointer group">
 													<img src="images/icons/question.svg" alt="">
 													<div
@@ -982,7 +967,7 @@
 										<div
 											class="flex-1 flex flex-col justify-end border border-[#DFE4EA] rounded-md py-[14px] pl-4 pr-[11px] sm:w-auto w-full">
 											<div class="flex mb-1 gap-[6px]">
-												<p class="form-info">Выручка</p>
+												<p class="form-info text-14">Выручка</p>
 												<div class="relative cursor-pointer group">
 													<img src="images/icons/question.svg" alt="">
 													<div
@@ -1002,7 +987,7 @@
 										<div
 											class="flex-1 flex flex-col justify-end border border-[#DFE4EA] rounded-md py-[14px] pl-[13px] pr-[11px]">
 											<div class="flex mb-1 gap-[6px]">
-												<p class="form-info">Маржинальная прибыль</p>
+												<p class="form-info text-14">Маржинальная прибыль</p>
 												<div class="relative cursor-pointer group">
 													<img src="images/icons/question.svg" alt="">
 													<div
@@ -1022,7 +1007,7 @@
 										<div
 											class="flex-1 flex flex-col justify-end border border-[#DFE4EA] rounded-md py-[14px] pl-4 pr-[11px]">
 											<div class="flex mb-1 gap-[6px]">
-												<p class="form-info">Точка безубыточности</p>
+												<p class="form-info text-14">Точка безубыточности</p>
 												<div class="relative cursor-pointer group">
 													<img src="images/icons/question.svg" alt="">
 													<div
@@ -1205,7 +1190,8 @@
 									ключевым запросам.</p>
 								<ul class="sm:mt-8 mt-6">
 									<li class="flex items-center gap-3 text-primary text-sm leading-[22px] mb-[14px]">
-										<svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<svg class="shrink-0" width="18" height="18" viewBox="0 0 18 18" fill="none"
+											xmlns="http://www.w3.org/2000/svg">
 											<path
 												d="M9 16.5C13.125 16.5 16.5 13.125 16.5 9C16.5 4.875 13.125 1.5 9 1.5C4.875 1.5 1.5 4.875 1.5 9C1.5 13.125 4.875 16.5 9 16.5Z"
 												stroke="#A78BFA" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" />
@@ -1216,7 +1202,8 @@
 										Анализируем 10+ конкурентов через MPstats
 									</li>
 									<li class="flex items-center gap-3 text-primary text-sm leading-[22px] mb-[14px]">
-										<svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<svg class="shrink-0" width="18" height="18" viewBox="0 0 18 18" fill="none"
+											xmlns="http://www.w3.org/2000/svg">
 											<path
 												d="M9 16.5C13.125 16.5 16.5 13.125 16.5 9C16.5 4.875 13.125 1.5 9 1.5C4.875 1.5 1.5 4.875 1.5 9C1.5 13.125 4.875 16.5 9 16.5Z"
 												stroke="#A78BFA" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" />
@@ -1227,7 +1214,8 @@
 										Собираем ключевые запросы
 									</li>
 									<li class="flex items-center gap-3 text-primary text-sm leading-[22px] mb-[14px]">
-										<svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<svg class="shrink-0" width="18" height="18" viewBox="0 0 18 18" fill="none"
+											xmlns="http://www.w3.org/2000/svg">
 											<path
 												d="M9 16.5C13.125 16.5 16.5 13.125 16.5 9C16.5 4.875 13.125 1.5 9 1.5C4.875 1.5 1.5 4.875 1.5 9C1.5 13.125 4.875 16.5 9 16.5Z"
 												stroke="#A78BFA" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" />
@@ -1238,7 +1226,8 @@
 										Корректируем заголовок
 									</li>
 									<li class="flex items-center gap-3 text-primary text-sm leading-[22px] mb-[14px]">
-										<svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<svg class="shrink-0" width="18" height="18" viewBox="0 0 18 18" fill="none"
+											xmlns="http://www.w3.org/2000/svg">
 											<path
 												d="M9 16.5C13.125 16.5 16.5 13.125 16.5 9C16.5 4.875 13.125 1.5 9 1.5C4.875 1.5 1.5 4.875 1.5 9C1.5 13.125 4.875 16.5 9 16.5Z"
 												stroke="#A78BFA" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" />
@@ -1249,7 +1238,8 @@
 										Правим характеристики
 									</li>
 									<li class="flex items-center gap-3 text-primary text-sm leading-[22px] mb-[14px]">
-										<svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<svg class="shrink-0" width="18" height="18" viewBox="0 0 18 18" fill="none"
+											xmlns="http://www.w3.org/2000/svg">
 											<path
 												d="M9 16.5C13.125 16.5 16.5 13.125 16.5 9C16.5 4.875 13.125 1.5 9 1.5C4.875 1.5 1.5 4.875 1.5 9C1.5 13.125 4.875 16.5 9 16.5Z"
 												stroke="#A78BFA" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" />
@@ -1260,7 +1250,8 @@
 										Пишем SEO описание на 1000-1500 знаков
 									</li>
 									<li class="flex items-center gap-3 text-primary text-sm leading-[22px]">
-										<svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<svg class="shrink-0" width="18" height="18" viewBox="0 0 18 18" fill="none"
+											xmlns="http://www.w3.org/2000/svg">
 											<path
 												d="M9 16.5C13.125 16.5 16.5 13.125 16.5 9C16.5 4.875 13.125 1.5 9 1.5C4.875 1.5 1.5 4.875 1.5 9C1.5 13.125 4.875 16.5 9 16.5Z"
 												stroke="#A78BFA" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" />
@@ -1275,7 +1266,8 @@
 									<div class="flex  items-center gap-3">
 										<img class="minus-count cursor-pointer opacity-70 hover:opacity-100" src="images/icons/minus.svg"
 											alt="minus icon">
-										<span class="count text-dark-2 sm:text-base text-sm leading-6 font-medium">1 карточка</span>
+										<span class="count text-dark-2 sm:text-base select-none text-sm leading-6  font-medium">1
+											карточка</span>
 										<img class="plus-count cursor-pointer opacity-70 hover:opacity-100" src="images/icons/add.svg"
 											alt="plus icon">
 									</div>
@@ -1295,7 +1287,8 @@
 									ключевым запросам.</p>
 								<ul class="sm:mt-8 mt-6">
 									<li class="flex items-center gap-3 text-primary text-sm leading-[22px] mb-[14px]">
-										<svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<svg class="shrink-0" width="18" height="18" viewBox="0 0 18 18" fill="none"
+											xmlns="http://www.w3.org/2000/svg">
 											<path
 												d="M9 16.5C13.125 16.5 16.5 13.125 16.5 9C16.5 4.875 13.125 1.5 9 1.5C4.875 1.5 1.5 4.875 1.5 9C1.5 13.125 4.875 16.5 9 16.5Z"
 												stroke="#A78BFA" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" />
@@ -1306,7 +1299,8 @@
 										Анализируем 10+ конкурентов через MPstats
 									</li>
 									<li class="flex items-center gap-3 text-primary text-sm leading-[22px] mb-[14px]">
-										<svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<svg class="shrink-0" width="18" height="18" viewBox="0 0 18 18" fill="none"
+											xmlns="http://www.w3.org/2000/svg">
 											<path
 												d="M9 16.5C13.125 16.5 16.5 13.125 16.5 9C16.5 4.875 13.125 1.5 9 1.5C4.875 1.5 1.5 4.875 1.5 9C1.5 13.125 4.875 16.5 9 16.5Z"
 												stroke="#A78BFA" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" />
@@ -1317,7 +1311,8 @@
 										Собираем ключевые запросы
 									</li>
 									<li class="flex items-center gap-3 text-primary text-sm leading-[22px] mb-[14px]">
-										<svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<svg class="shrink-0" width="18" height="18" viewBox="0 0 18 18" fill="none"
+											xmlns="http://www.w3.org/2000/svg">
 											<path
 												d="M9 16.5C13.125 16.5 16.5 13.125 16.5 9C16.5 4.875 13.125 1.5 9 1.5C4.875 1.5 1.5 4.875 1.5 9C1.5 13.125 4.875 16.5 9 16.5Z"
 												stroke="#A78BFA" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" />
@@ -1328,7 +1323,8 @@
 										Корректируем заголовок
 									</li>
 									<li class="flex items-center gap-3 text-primary text-sm leading-[22px] mb-[14px]">
-										<svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<svg class="shrink-0" width="18" height="18" viewBox="0 0 18 18" fill="none"
+											xmlns="http://www.w3.org/2000/svg">
 											<path
 												d="M9 16.5C13.125 16.5 16.5 13.125 16.5 9C16.5 4.875 13.125 1.5 9 1.5C4.875 1.5 1.5 4.875 1.5 9C1.5 13.125 4.875 16.5 9 16.5Z"
 												stroke="#A78BFA" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" />
@@ -1339,7 +1335,8 @@
 										Правим характеристики
 									</li>
 									<li class="flex items-center gap-3 text-primary text-sm leading-[22px] mb-[14px]">
-										<svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<svg class="shrink-0" width="18" height="18" viewBox="0 0 18 18" fill="none"
+											xmlns="http://www.w3.org/2000/svg">
 											<path
 												d="M9 16.5C13.125 16.5 16.5 13.125 16.5 9C16.5 4.875 13.125 1.5 9 1.5C4.875 1.5 1.5 4.875 1.5 9C1.5 13.125 4.875 16.5 9 16.5Z"
 												stroke="#A78BFA" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" />
@@ -1350,7 +1347,8 @@
 										Пишем SEO описание на 1000-1500 знаков
 									</li>
 									<li class="flex items-center gap-3 text-primary text-sm leading-[22px]">
-										<svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<svg class="shrink-0" width="18" height="18" viewBox="0 0 18 18" fill="none"
+											xmlns="http://www.w3.org/2000/svg">
 											<path
 												d="M9 16.5C13.125 16.5 16.5 13.125 16.5 9C16.5 4.875 13.125 1.5 9 1.5C4.875 1.5 1.5 4.875 1.5 9C1.5 13.125 4.875 16.5 9 16.5Z"
 												stroke="#A78BFA" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" />
@@ -1382,7 +1380,8 @@
 									ключевым запросам.</p>
 								<ul class="mt-8">
 									<li class="flex items-center gap-3 text-primary text-sm leading-[22px] mb-[14px]">
-										<svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<svg class="shrink-0" width="18" height="18" viewBox="0 0 18 18" fill="none"
+											xmlns="http://www.w3.org/2000/svg">
 											<path
 												d="M9 16.5C13.125 16.5 16.5 13.125 16.5 9C16.5 4.875 13.125 1.5 9 1.5C4.875 1.5 1.5 4.875 1.5 9C1.5 13.125 4.875 16.5 9 16.5Z"
 												stroke="#2D68F8" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" />
@@ -1393,7 +1392,8 @@
 										Анализируем 10+ конкурентов через MPstats
 									</li>
 									<li class="flex items-center gap-3 text-primary text-sm leading-[22px] mb-[14px]">
-										<svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<svg class="shrink-0" width="18" height="18" viewBox="0 0 18 18" fill="none"
+											xmlns="http://www.w3.org/2000/svg">
 											<path
 												d="M9 16.5C13.125 16.5 16.5 13.125 16.5 9C16.5 4.875 13.125 1.5 9 1.5C4.875 1.5 1.5 4.875 1.5 9C1.5 13.125 4.875 16.5 9 16.5Z"
 												stroke="#2D68F8" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" />
@@ -1404,7 +1404,8 @@
 										Собираем ключевые запросы
 									</li>
 									<li class="flex items-center gap-3 text-primary text-sm leading-[22px] mb-[14px]">
-										<svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<svg class="shrink-0" width="18" height="18" viewBox="0 0 18 18" fill="none"
+											xmlns="http://www.w3.org/2000/svg">
 											<path
 												d="M9 16.5C13.125 16.5 16.5 13.125 16.5 9C16.5 4.875 13.125 1.5 9 1.5C4.875 1.5 1.5 4.875 1.5 9C1.5 13.125 4.875 16.5 9 16.5Z"
 												stroke="#2D68F8" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" />
@@ -1415,7 +1416,8 @@
 										Корректируем заголовок
 									</li>
 									<li class="flex items-center gap-3 text-primary text-sm leading-[22px] mb-[14px]">
-										<svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<svg class="shrink-0" width="18" height="18" viewBox="0 0 18 18" fill="none"
+											xmlns="http://www.w3.org/2000/svg">
 											<path
 												d="M9 16.5C13.125 16.5 16.5 13.125 16.5 9C16.5 4.875 13.125 1.5 9 1.5C4.875 1.5 1.5 4.875 1.5 9C1.5 13.125 4.875 16.5 9 16.5Z"
 												stroke="#2D68F8" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" />
@@ -1426,7 +1428,8 @@
 										Правим характеристики
 									</li>
 									<li class="flex items-center gap-3 text-primary text-sm leading-[22px] mb-[14px]">
-										<svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<svg class="shrink-0" width="18" height="18" viewBox="0 0 18 18" fill="none"
+											xmlns="http://www.w3.org/2000/svg">
 											<path
 												d="M9 16.5C13.125 16.5 16.5 13.125 16.5 9C16.5 4.875 13.125 1.5 9 1.5C4.875 1.5 1.5 4.875 1.5 9C1.5 13.125 4.875 16.5 9 16.5Z"
 												stroke="#2D68F8" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" />
@@ -1456,7 +1459,8 @@
 												stroke-linejoin="round" />
 										</svg>
 
-										<span class="count text-dark-2 sm:text-base text-sm leading-6 font-medium">1 карточка</span>
+										<span class="count text-dark-2 sm:text-base text-sm leading-6 select-none font-medium">1
+											карточка</span>
 										<svg class="plus-count cursor-pointer opacity-70 hover:opacity-100" width="24" height="24"
 											viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
 											<path d="M6 12H18" stroke="#2D68F8" stroke-width="1.5" stroke-linecap="round"
@@ -1482,7 +1486,8 @@
 									ключевым запросам.</p>
 								<ul class="mt-8">
 									<li class="flex items-center gap-3 text-primary text-sm leading-[22px] mb-[14px]">
-										<svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<svg class="shrink-0" width="18" height="18" viewBox="0 0 18 18" fill="none"
+											xmlns="http://www.w3.org/2000/svg">
 											<path
 												d="M9 16.5C13.125 16.5 16.5 13.125 16.5 9C16.5 4.875 13.125 1.5 9 1.5C4.875 1.5 1.5 4.875 1.5 9C1.5 13.125 4.875 16.5 9 16.5Z"
 												stroke="#2D68F8" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" />
@@ -1493,7 +1498,8 @@
 										Анализируем 10+ конкурентов через MPstats
 									</li>
 									<li class="flex items-center gap-3 text-primary text-sm leading-[22px] mb-[14px]">
-										<svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<svg class="shrink-0" width="18" height="18" viewBox="0 0 18 18" fill="none"
+											xmlns="http://www.w3.org/2000/svg">
 											<path
 												d="M9 16.5C13.125 16.5 16.5 13.125 16.5 9C16.5 4.875 13.125 1.5 9 1.5C4.875 1.5 1.5 4.875 1.5 9C1.5 13.125 4.875 16.5 9 16.5Z"
 												stroke="#2D68F8" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" />
@@ -1504,7 +1510,8 @@
 										Собираем ключевые запросы
 									</li>
 									<li class="flex items-center gap-3 text-primary text-sm leading-[22px] mb-[14px]">
-										<svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<svg class="shrink-0" width="18" height="18" viewBox="0 0 18 18" fill="none"
+											xmlns="http://www.w3.org/2000/svg">
 											<path
 												d="M9 16.5C13.125 16.5 16.5 13.125 16.5 9C16.5 4.875 13.125 1.5 9 1.5C4.875 1.5 1.5 4.875 1.5 9C1.5 13.125 4.875 16.5 9 16.5Z"
 												stroke="#2D68F8" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" />
@@ -1515,7 +1522,8 @@
 										Корректируем заголовок
 									</li>
 									<li class="flex items-center gap-3 text-primary text-sm leading-[22px] mb-[14px]">
-										<svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<svg class="shrink-0" width="18" height="18" viewBox="0 0 18 18" fill="none"
+											xmlns="http://www.w3.org/2000/svg">
 											<path
 												d="M9 16.5C13.125 16.5 16.5 13.125 16.5 9C16.5 4.875 13.125 1.5 9 1.5C4.875 1.5 1.5 4.875 1.5 9C1.5 13.125 4.875 16.5 9 16.5Z"
 												stroke="#2D68F8" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" />
@@ -1526,7 +1534,8 @@
 										Правим характеристики
 									</li>
 									<li class="flex items-center gap-3 text-primary text-sm leading-[22px] mb-[14px]">
-										<svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<svg class="shrink-0" width="18" height="18" viewBox="0 0 18 18" fill="none"
+											xmlns="http://www.w3.org/2000/svg">
 											<path
 												d="M9 16.5C13.125 16.5 16.5 13.125 16.5 9C16.5 4.875 13.125 1.5 9 1.5C4.875 1.5 1.5 4.875 1.5 9C1.5 13.125 4.875 16.5 9 16.5Z"
 												stroke="#2D68F8" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" />
